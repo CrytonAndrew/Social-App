@@ -1,0 +1,30 @@
+{
+  "name": "social-app",
+  "version": "1.0.0",
+  "description": "This is a social app for practise",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index",
+    "server": "nodemon server/index",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run index\" \"npm run client\"",
+    "data:import": "node server/seeder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cryton Sibanda",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "concurrently": "^6.2.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.4",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12"
+  }
+}
